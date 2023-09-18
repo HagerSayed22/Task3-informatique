@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <title>Home Page</title>
+        <meta charset="utf-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+       <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body >
+    <nav id="navbar" class="navbar navbar-default" style="background-color: white;">
+        <div class="container">
+        <div class="container-fluid">
+        
+        <!-- BRAND -->
+        <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#alignment-example" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Products</a>
+        </div>
+        
+        <!-- COLLAPSIBLE NAVBAR -->
+        <div class="collapse navbar-collapse" id="alignment-example">
+        
+        <!-- Search -->
+        <form class="navbar-form navbar-right" role="search">
+        <div class="form-group">
+        
+        </div>
+        <button onclick="ConvertMode()" type="button" class="btn btn-default"><i id="moon" class="fa-sharp fa-regular fa-moon"></i> Dark Mode</button>
+        </form>
+        
+        </div>
+        
+        </div>
+    </div>
+        </nav>
+<br><br>
+        <div class="container">
+        <div class="row">
+            <div class="col col-md-9 col-sm-9 col-xs-12" >
+                <div class="main">
+  
+                    <!-- Actual search box -->
+                    <div class="form-group has-feedback has-search">
+                      <span class="glyphicon glyphicon-search form-control-feedback"></span>
+                      <input id="inputSearch" type="text" class="form-control " placeholder="Search" onkeyup="FilterSearch()">
+                    </div>
+                    
+                  </div>
+            </div>
+            <div class="col col-md-3 col-sm-3 col-xs-12">
+                <form  >
+                    <select name="brands" id="brands" onchange="FilterDropDown()" style="color: black;">
+                      <option value="Apple">Apple</option>
+                      <option value="Huawei">Huawei</option>
+                      <option value="Samsung">Samsung</option>
+                      <option value="Fog Scent Xpressio">Fog Scent Xpressio</option>
+                      <option value="Royal_Mirage">Royal_Mirage</option>
+                      <option value="L'Oreal Paris">L'Oreal Paris</option>
+                    </select>
+                  </form>
+                    
+            </div>
+        </div>
+    </div>
+<br><br><br>
+    <div class="container" >
+     <div class="row" id="content" >
+        
+        
+     </div>
+    </div>
+  
+    <script src="JS/script.js"></script>
+</body>
+</html>

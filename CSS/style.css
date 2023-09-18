@@ -1,0 +1,85 @@
+*{
+    box-sizing: border-box;
+}
+.dark{
+    background-color: rgba(0, 0, 0, 0.818);
+    box-shadow: none;
+    color: white ;
+}
+.darkSelect{
+    color: black;
+}
+body{
+    background-color: ghostwhite;
+}
+nav{
+    box-shadow: 2px 2px 10px rgb(236, 235, 235);
+}
+nav a[class="navbar-brand"]{
+    font-size: 25px;
+    font-weight: 700;
+    color: black;
+}
+nav button[type="submit"]{
+    font-size: 20px;
+    font-weight: 600;
+}
+button[type="submit"]{
+    border: none;
+}
+
+/*  input search */
+
+.main {
+    width: 50%;
+}
+.main input{
+    border: none;
+    box-shadow: 2px 2px 10px rgb(236, 235, 235);
+    font-size: 20px;
+    height: 40px;
+}
+.has-search .form-control-feedback {
+    right: initial;
+    left: 0;
+    color: #ccc;
+    font-size: 18px;
+    padding-top:5px ;
+}
+
+.has-search .form-control {
+    padding-right: 12px;
+    padding-left: 34px;
+}
+
+select{
+    width: 80%;
+    height: 40px;
+    border: none;
+    font-size: 18px;
+    box-shadow: 2px 2px 10px rgb(236, 235, 235);
+}
+select:hover{
+    cursor: pointer;
+}
+p{
+    font-size: 15px;
+    font-weight: bold;
+}
+span{
+    font-weight: normal;
+}
+h4{
+    font-size: 20px;
+    font-weight: 600;
+}
+.card{
+    cursor: pointer;
+    background-color:white;
+    min-height: 500px;
+    box-shadow:2px 2px 10px rgb(236, 235, 235);
+    border-radius:10px
+}
+.dark-boxShadow{
+    box-shadow: none;
+}
